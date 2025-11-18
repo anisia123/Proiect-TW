@@ -429,6 +429,7 @@ h2 {
     width: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .menu ul{
     display: flex;
@@ -460,7 +461,8 @@ h2 {
     margin-bottom: 5%;
   }
   .row1 img, .row2 img, .row3 img{
-    max-width: 100%;
+    max-width: 110%;
+    height: auto;
     border-width: 5px;
   }
   .image-container{
