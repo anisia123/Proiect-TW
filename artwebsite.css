@@ -486,6 +486,7 @@ h2 {
     }
     .row1 img:hover, .row2 img:hover, .row3 img:hover,.image-container:hover img {
         transform: none; 
+        box-shadow: none;
         filter: brightness(70%);
     }
     .site-footer {
