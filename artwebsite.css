@@ -266,7 +266,7 @@ body{
   border-radius: 10%;
   border-color: #ddddd4;
   transition: transform 0.3s ease;
-  max-width: 30%;
+  max-width: 100%;
 }
 .row1 img:hover, .row2 img:hover, .row3 img:hover{
   transform: scale(1.1);
@@ -344,12 +344,24 @@ h2 {
   color: #666;
   font-style: italic;
 }
+@media (max-width:1024px){
+  .row1, .row2, .row3{
+    flex-wrap: wrap;
+  }
+  .row1 img, .row2 img, .row3 img{
+    max-width: 90%;
+  }
+}
 /*medium screens*/
 @media (max-width: 800px){
   .home-section{
     flex-direction: column;
     align-items: center;
     padding: 2em 1em;
+  }
+  .menu ul{
+    display: flex;
+    flex-direction: column;
   }
   .about-text, .about-image{
     flex: none;
@@ -386,11 +398,15 @@ h2 {
     text-align: center;
     gap: 1em;
   }
+  .contact-container-header form{
+    width: 100%;
+  }
   .email a, .phone a{
     font-size: large;
   }
   .row1, .row2, .row3{
     width: 90%;
+    height: auto;
     margin-left: 5%;
     margin-right: 5%;
     flex-wrap: wrap;
@@ -398,7 +414,7 @@ h2 {
     gap: 1.5em;
   }
   .row1 img, .row2 img, .row3 img {
-    max-width: 45%;
+    max-width: 90%;
   }
   .image-container{
     flex-basis: 45%;
@@ -418,6 +434,10 @@ h2 {
   }
   .menu{
     width: auto;
+  }
+  .menu ul{
+    display: flex;
+    flex-direction: column;
   }
   .menu li{
     padding: 0.3em;
@@ -451,4 +471,3 @@ h2 {
     width: 100%;
   }
 }
-
