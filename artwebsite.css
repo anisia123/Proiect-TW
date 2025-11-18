@@ -473,8 +473,11 @@ h2 {
         max-width: 100%; 
         border-width: 5px;
     }
-    
     .image-container {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 10%;
         flex-basis: auto;
         width: 100%;
     }
