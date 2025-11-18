@@ -79,7 +79,12 @@ body{
   text-decoration: none;
   text-align: center;
   margin: 0 1em 1em 1em;
-  
+  transition: color 0.5s ease-in-out, transform 0.3s ease-out 0.2s, box-shadow 0.5s ease-in 0.1s;
+}
+.menu li:hover{
+    color: #a00000;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 .menu li a {
   color: #333;
@@ -90,6 +95,45 @@ body{
 }
 .menu li a:hover {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 150px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  z-index: 10;
+  padding: 0.5em 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+.menu li:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.dropdown-menu li {
+  display: block;
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.dropdown-menu li a {
+  padding: 0.5em 1em;
+  color: #333;
+  display: block;
+}
+.dropdown-menu li a:hover {
+  background-color: #ddddd4;
+  text-shadow: none;
 }
 /*Footer*/
 .site-footer {
@@ -148,6 +192,10 @@ body{
   max-width: 90%;
   height: auto;
   margin-right: 25%;
+  animation: breath 4s infinite alternate ease-in-out;
+}
+.about-image img:hover {
+    transform: none; 
 }
 /*Contact page*/
 .contact-title {
@@ -172,6 +220,7 @@ body{
   display: flex;
   flex-direction: row;
   gap: 2em;
+  position: relative;
 }
 .info {
   margin-top: 1em;
