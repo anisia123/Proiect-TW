@@ -478,7 +478,16 @@ h2 {
         flex-basis: auto;
         width: 100%;
     }
-    
+    .image-container:hover .overlay-text{
+        opacity: 1;
+    }
+    .overlay-text{
+        font-size: 1em;
+    }
+    .row1 img:hover, .row2 img:hover, .row3 img:hover,.image-container:hover img {
+        transform: none; 
+        filter: brightness(70%);
+    }
     .site-footer {
         padding: 20px 10px;
         font-size: 0.8em;
