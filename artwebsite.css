@@ -188,12 +188,12 @@ body{
 .contact-container form {
   width: 55%;
 }
-.contact-container form label {
+.contact-container form div {
   display: flex;
   flex-direction: column;
   margin-bottom: 1em;
 }
-.contact-container form label p {
+.contact-container form div p {
   font-weight: bold;
   margin-bottom: 0.3em;
   color: #333;
