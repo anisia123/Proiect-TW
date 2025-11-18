@@ -428,7 +428,7 @@ h2 {
   .menu{
     width: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   .menu ul{
     display: flex;
