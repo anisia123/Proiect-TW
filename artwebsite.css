@@ -1,0 +1,348 @@
+body{
+    height: 135vh;
+    background-color: #9f9e8f;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Nightside;
+    src: url(./fonts/Nightside.ttf);
+}
+@font-face {
+    font-family: Display;
+    src: url(./fonts/SG\ Display\ DEMO\ -\ Wide.ttf);
+}
+@font-face {
+    font-family: Medival-Sharp;
+    src: url(./fonts/MedievalSharp-Book.ttf);
+}
+@font-face {
+    font-family: Thunderbolt;
+    src: url(./fonts/Thunderbolt\ PERSONAL\ USE\ ONLY!.ttf);
+}
+@font-face {
+    font-family: BradyBun;
+    src: url(./fonts/BradBunR.ttf);
+}
+@font-face {
+    font-family: Arcade;
+    src: url(./fonts/Arcade\ Quest.ttf);
+}
+@font-face {
+    font-family: WeirdComic;
+    src: url(./fonts/WeirdComic-Regular.ttf);
+}
+/*Navigation Menu*/
+.title-font{
+    font-family: WeirdComic, sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin-left: 1em;
+}
+
+.text-font-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.001em 1em;
+  height: min-content;
+  box-sizing: border-box;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 0;
+  align-items: center;
+  justify-content: center;
+  
+}
+.menu li {
+  position: relative;
+  font-family: WeirdComic;
+  font-size: large;
+  font-weight: 200;
+  color: #333;
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 1em 1em 1em;
+  
+}
+.menu li a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5em;
+  text-align: center;
+  display: block;
+}
+.menu li a:hover {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+/*Footer*/
+.site-footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  font-size: 0.9em;
+  color: #444;
+}
+.site-footer a {
+  color: #333;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/*Home page*/
+.home-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4em 0%;
+  gap: 3em;
+}
+
+.about-text {
+  flex: 1;
+  font-family: 'Georgia', serif;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: #333;
+  margin-top: 5%;
+  text-align: left;
+  justify-content: left;
+}
+
+.about-text h2 {
+  font-family: Display;
+  font-size: 4em;
+  padding-top: 0.5em;
+  margin-bottom: 1.4em;
+  transform: rotate(-3deg);
+  transform-origin: top left;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 90%;
+  height: auto;
+  margin-right: 25%;
+}
+/*Contact page*/
+.contact-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 2.2em;
+  margin-top: 0.5em;
+  color: #333;
+  letter-spacing: 1px;
+}
+.contact-container {
+  background-color: #f0f0f0;
+  width: 70%;
+  height: 85vh;
+  margin: 2em auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 2em;
+  margin-bottom: 10%;
+}
+.contact-container-header {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+.info {
+  margin-top: 1em;
+  width: 45%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #444;
+}
+.info p {
+  margin: 0.4em 0;
+}
+.info h2 {
+  padding: 0.5em 0;
+}
+.contact-container form {
+  width: 55%;
+}
+.contact-container form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.contact-container form label p {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #333;
+}
+.contact-container form input,
+.contact-container form textarea {
+  width: 100%;
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contact-container form textarea {
+  min-height: 120px;
+}
+.contact-container form button {
+  padding: 0.6em 1.2em;
+  border-radius: 25px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact-container form button:hover {
+  background-color: #555;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 7%;
+  font-size: 1.1em;
+}
+.email a, .phone a{
+  font-weight: bold;
+  color: #333;
+  font-size:xx-large;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+.contact-icons img {
+  max-height: 3em;
+  transition: transform 0.3s ease;
+}
+.contact-icons img:hover {
+  transform: scale(1.2);
+}
+/*Shop + Work page images*/
+.row1, .row2, .row3{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 64%;
+  margin-left: 18%;
+  margin-right: 18%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.row1 img, .row2 img, .row3 img{
+  border: 10px solid;
+  border-radius: 10%;
+  border-color: #ddddd4;
+  transition: transform 0.3s ease;
+}
+.row1 img:hover, .row2 img:hover, .row3 img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px #333;
+
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 10%;
+}
+.image-container img {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.image-container:hover img {
+  transform: scale(1.1);
+  filter: brightness(70%);
+  box-shadow: 0 8px 16px #333;
+}
+.overlay-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+}
+.image-container:hover .overlay-text {
+  opacity: 1;
+}
+/*Shop Page*/
+.price {
+  font-size: 1.4em;
+  color: #fff;
+  margin: 0.5em 0;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #555;
+}
+
+/*Work Page*/
+h2,p {
+  margin: 10px auto;
+  width: 60%;
+  text-align: center;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+  font-family: 'Georgia', serif;
+}
+.section-description {
+  font-size: 1em;
+  color: #666;
+  font-style: italic;
+}
+
+
+
