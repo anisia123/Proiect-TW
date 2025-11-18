@@ -67,6 +67,7 @@ body{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 10%;
 }
 .menu li {
   position: relative;
@@ -82,9 +83,7 @@ body{
   transition: color 0.5s ease-in-out, transform 0.3s ease-out 0.2s, box-shadow 0.5s ease-in 0.1s;
 }
 .menu li:hover{
-    color: #a00000;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transform: scale(1.2);
 }
 .menu li a {
   color: #333;
@@ -193,6 +192,14 @@ body{
   height: auto;
   margin-right: 25%;
   animation: breath 4s infinite alternate ease-in-out;
+}
+@keyframes breath {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-25px) scale(1.1);
+  }
 }
 .about-image img:hover {
     transform: none; 
